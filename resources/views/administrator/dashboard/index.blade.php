@@ -1,7 +1,7 @@
 @extends('administrator.layouts.main')
 
 @section('content')
-    <section class="section">
+    <section class="section"   id="app">
         <div class="section-header">
             <h1>Dashboard</h1>
         </div>
@@ -167,6 +167,7 @@
                 </div>
             </div>
         </div>
+        <helloworld></helloworld>
         <div class="row">
             <div class="col-lg-6 col-md-12 col-12 col-sm-12">
                 <div class="card">
@@ -662,3 +663,7 @@
         </div>
     </section>
 @endsection
+
+@push('js')
+    <script src="{{asset('js/app.js')}}"></script>
+@endpush
